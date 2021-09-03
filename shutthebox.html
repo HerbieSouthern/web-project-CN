@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shut The Box Solo Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bodyBackgroundBox">
+    <!-- Navigation -->
+    <div class="navbar navbarBox">
+        <div class= "box boxBox">
+        <a href="index.html">Home</a>
+        </div>
+        <div class= "box boxBox">
+        <a href="lucky3.html">Lucky number 3 game</a>
+        </div>
+        <div class= "box boxBox">
+        <a href="shutthebox.html">Shut the box Game</a>
+        </div>
+        <div class= "box boxBox">
+        <a href="aboutme.html">About me</a>
+        </div>
+    </div>
+    <!-- Title -->
+    <div>
+        <h1>Shut The Box</h1>
+    </div>
+
+    <!-- Game rules, hopefully in dropdown menu. -->
+
+    <div>
+        <button type="button" class="collapsible">Rules to the game</button>
+        <div class="content">
+            <p>
+                The rules to this game are as follows:<br>
+                <br>
+                - First you must roll the dice. In this game this is done by typing 'Roll' and hitting Enter.<br>
+                <br>
+                - You are then presented with 9 tiles labelled one to nine. You must choose either one or more numbers which add up to the total number you rolled. <br>
+                For example if you roll a 9, you can choose tiles 2 and 7, or you could just choose tile 9 itself.<br>
+                You choose these tiles by entering the numbers you want to pick in the format '2 7' or '9' and hitting Enter.
+                <br>
+                <br>
+                - The objective of the game is to lower as many of the tiles as you can before you run out of moves, if you successfully lower all of the tiles you have 'shut the box'.<br> You can either consider your score to be the lowest total number of tiles left at the end, or the lowest total sum of all the remaining tiles when they are added together.<br> Both numbers are presented to you when you type 'End game' and hit Enter.<br>
+                <br>
+                -You will then be presented with the option to either 'restart', which starts the game over with fresh tiles, or 'exit', which will stop the running Python Script.
+        </p>
+        </div>
+    </div>
+
+    <!-- Python Interpreter -->
+    <div class="container">
+        <!-- <iframe src="https://trinket.io/embed/python3/5146651fcf?toggleCode=true&start=result" width="70%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe> -->
+        <iframe frameborder="0" width="70%" height="500px" src="https://replit.com/@HerbieSouthern/Shut-The-Box?embed=true"></iframe>
+    </div>
+
+    <!-- Game Description -->
+    <div class="centerP shutTheBoxP">
+        <p>
+            This game was personal project I made to help myself better understand all of the different tools available in Python. It is based on the dice-based board game called 'Shut The Box'.<br>
+            This project uses while loops, inputs, if/else, functions, lists and the imported 'random' library to simulate rolling the dice and then choosing a tile. If all tiles are removed/cleared then the game is won. If you think you have no moves left and end the game it then calculates your score, in both the total of the remaining numbers and the total number of tiles left.
+        </p>
+    </div>
+
+
+
+
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
+
