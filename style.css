@@ -110,9 +110,16 @@ body {
     padding: 10px 30px 10px 30px;
 }
 .boxHome {background-color: #79807e;}
+.boxHome:hover {background-color: #9fada9;}
+
 .boxLucky {background-color: #657565;}
+.boxLucky:hover {background-color: #749b74;}
+
 .boxBox {background-color: #ccbdae;}
+.boxBox:hover {background-color: #e0d6cc;}
+
 .boxAbout {background-color: #79807e;}
+.boxAbout:hover {background-color: #a2a3a3;}
 
 .navbar {
     display: flex;
@@ -138,18 +145,17 @@ body {
 }
 
 
-
 .navbarAbout {
     background-color: #525a58;
 }
 
 .navbar a:link{
     color: #c4cbca;
-    /* background-color: #79807e;
-    width: 300px; */
+    text-decoration: none;
 }
 .navbar a:visited{
     color: #c4cbca;
+    text-decoration: none;
 }
 
 .navbar a:hover{
